@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "221823459595",
+    "project_id": "onepager-38009",
+    "storage_bucket": "onepager-38009.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221823459595:android:e2d17e39b5abedde86c20e",
+        "android_client_info": {
+          "package_name": "com.example.flutter_sample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1AW45wawqYQ72E3-nA8V5OkOgzKd4kg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
