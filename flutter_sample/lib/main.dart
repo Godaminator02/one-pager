@@ -791,42 +791,44 @@ class _DrawIoScreenState extends State<DrawIoScreen> {
             ),
           ),
           Expanded(
-            child: _isSnackBarVisible
-                ? Container(
-                    width: double.infinity,
-                    height: double.infinity,
-                    color: Colors.grey[100],
-                    child: Center(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.info_outline,
-                            size: 64,
-                            color: Colors.blue[300],
-                          ),
-                          const SizedBox(height: 16),
-                          Text(
-                            'Excalidraw Temporarily Hidden',
-                            style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.grey[700],
-                            ),
-                          ),
-                          const SizedBox(height: 8),
-                          Text(
-                            'Please respond to the notification above',
-                            style: TextStyle(
-                              fontSize: 14,
-                              color: Colors.grey[600],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  )
-                : const HtmlElementView(viewType: 'excalidraw-iframe'),
+            child:
+                // _isSnackBarVisible
+                //     ? Container(
+                //         width: double.infinity,
+                //         height: double.infinity,
+                //         color: Colors.grey[100],
+                //         child: Center(
+                //           child: Column(
+                //             mainAxisAlignment: MainAxisAlignment.center,
+                //             children: [
+                //               Icon(
+                //                 Icons.info_outline,
+                //                 size: 64,
+                //                 color: Colors.blue[300],
+                //               ),
+                //               const SizedBox(height: 16),
+                //               Text(
+                //                 'Excalidraw Temporarily Hidden',
+                //                 style: TextStyle(
+                //                   fontSize: 18,
+                //                   fontWeight: FontWeight.bold,
+                //                   color: Colors.grey[700],
+                //                 ),
+                //               ),
+                //               const SizedBox(height: 8),
+                //               Text(
+                //                 'Please respond to the notification above',
+                //                 style: TextStyle(
+                //                   fontSize: 14,
+                //                   color: Colors.grey[600],
+                //                 ),
+                //               ),
+                //             ],
+                //           ),
+                //         ),
+                //       )
+                //     :
+                const HtmlElementView(viewType: 'excalidraw-iframe'),
           ),
         ],
       ),
